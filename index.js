@@ -22,3 +22,6 @@ function ES6 (){ //behave as a block scope
     console.log(i);
 }
 ES6();
+
+//Window Object :-window object is like a container that containes many features and things that actually not the part of js own but guve to the js 
+//whenever needed like scrollbar,alert,prompt,console.log and part of js is while,do..while,array,function,object
