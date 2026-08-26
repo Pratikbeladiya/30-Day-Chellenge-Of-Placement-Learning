@@ -25,3 +25,10 @@ ES6();
 
 //Window Object :-window object is like a container that containes many features and things that actually not the part of js own but guve to the js 
 //whenever needed like scrollbar,alert,prompt,console.log and part of js is while,do..while,array,function,object
+
+//How to copy the reference variable
+let arr=[23,45,67,88];
+let arr2 =[...arr];
+arr2.push(10);
+console.log(arr2);
+console.log(arr);
