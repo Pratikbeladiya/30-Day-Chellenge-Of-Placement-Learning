@@ -1,5 +1,5 @@
 
-console.log("welcome to the day 5 of Linkedin challenge");
+/*console.log("welcome to the day 5 of Linkedin challenge");
 
 //Javascript made with 2 version: ES5(ECMAScript5) and ES6
 //in ES5 has a var variable
@@ -31,4 +31,22 @@ let arr=[23,45,67,88];
 let arr2 =[...arr];
 arr2.push(10);
 console.log(arr2);
-console.log(arr);
+console.log(arr); */
+
+//Promise
+
+let pr =new Promise(function(res,rej){
+    const n = Math.floor(Math.random()*10);
+    if(n<5){
+        return res();
+        }else{
+            rej();
+        }
+});
+
+pr.then(function(){
+console.log("valid number");
+})
+.catch(function(){
+    console.log("invalid number");
+});
