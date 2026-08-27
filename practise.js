@@ -116,3 +116,37 @@ console.log("Counter:", increment());
 // The inner function remembers the
 // 'count' variable even after counter()
 // has finished executing.
+
+// ==========================================
+// 5. HIGHER-ORDER FUNCTION
+// ==========================================
+
+// A function that accepts another function
+// as an argument OR returns a function
+// is called a Higher-Order Function.
+
+function calculate(a, b, operation) {
+    return operation(a, b);
+}
+
+const addition = (x, y) => x + y;
+const subtraction = (x, y) => x - y;
+const multiplication = (x, y) => x * y;
+
+console.log("HOF Addition:", calculate(10, 5, addition));
+console.log("HOF Subtraction:", calculate(10, 5, subtraction));
+console.log("HOF Multiplication:", calculate(10, 5, multiplication));
+
+
+// Higher-order function returning a function
+
+function multiplyBy(factor) {
+    return function (number) {
+        return number * factor;
+    };
+}
+
+const double = multiplyBy(2);
+
+console.log("Double:", double(5));
+console.log("Double:", double(10));
