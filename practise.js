@@ -92,3 +92,27 @@ processUser("Pratik", showMessage);
 processUser("Developer", (name) => {
     console.log(`Hello ${name}, keep learning!`);
 });
+
+
+// ==========================================
+// 4. CLOSURE
+// ==========================================
+
+function counter() {
+    let count = 0;
+
+    return function () {
+        count++;
+        return count;
+    };
+}
+
+const increment = counter();
+
+console.log("Counter:", increment());
+console.log("Counter:", increment());
+console.log("Counter:", increment());
+
+// The inner function remembers the
+// 'count' variable even after counter()
+// has finished executing.
