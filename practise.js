@@ -45,3 +45,23 @@ console.log("Descending:", descending);
 const portion = numbers.slice(1, 4);
 console.log("Slice:", portion);
 //done
+
+// ==========================================
+// 2. FUNCTIONS
+// ==========================================
+
+// Function Declaration
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+console.log(greet("Pratik"));
+
+
+// Function Expression
+const add = function (a, b) {
+    return a + b;
+};
+
+console.log("Addition:", add(10, 20));
+
