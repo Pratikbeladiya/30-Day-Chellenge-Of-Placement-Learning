@@ -65,3 +65,30 @@ const add = function (a, b) {
 
 console.log("Addition:", add(10, 20));
 
+// Arrow Function
+const multiply = (a, b) => a * b;
+
+console.log("Multiplication:", multiply(5, 4));
+
+
+// ==========================================
+// 3. CALLBACK FUNCTION
+// ==========================================
+
+function processUser(name, callback) {
+    console.log("Processing user...");
+
+    callback(name);
+}
+
+function showMessage(name) {
+    console.log(`Welcome, ${name}!`);
+}
+
+processUser("Pratik", showMessage);
+
+
+// Callback using arrow function
+processUser("Developer", (name) => {
+    console.log(`Hello ${name}, keep learning!`);
+});
